@@ -1,4 +1,4 @@
-{:paths ["src"]
+{:paths ["src" "resources"]
  :deps
  {com.etzhayyim/kotoba-datom
   {:git/url "https://github.com/etzhayyim/com-etzhayyim-kotoba-datom"

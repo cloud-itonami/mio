@@ -28,7 +28,7 @@
      ([] (fire nil))
      ([log-path]
       (let [target (or log-path @log-default)
-            seed (str (io/file (actor-dir) "kotoba" "seed.edn"))
+            seed (str (io/file (actor-dir) "resources" "mio" "kotoba" "seed.edn"))
             claims (edn/claims seed)
             cycle (count (k/read-log target))
             r (autorun/beat {:claims claims

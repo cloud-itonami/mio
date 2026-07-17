@@ -42,13 +42,13 @@
   {:method/id "lexicon"  :method/file "src/mio/methods/lexicon.cljc"  :method/role "R1: write-surface contract — validate a flow-improvement claim against com.etzhayyim.mio.flowClaim (kotoba/lexicon.flowClaim.edn)"}]
 
  :actor/lex
- [{:lex/id "flowClaim" :lex/file "kotoba/lexicon.flowClaim.edn"
+ [{:lex/id "flowClaim" :lex/file "resources/mio/kotoba/lexicon.flowClaim.edn"
    :lex/note "the typed write-surface contract for the suite's central interface (撓/燠/樋/委 → mio); validated by methods/lexicon.cljc"}
   {:lex/id "usefulFlowLedger"}]
 
  :actor/seed
- {:seed/file "kotoba/seed.edn"
-  :seed/ontology "kotoba/ontology.mio.edn"
+ {:seed/file "resources/mio/kotoba/seed.edn"
+  :seed/ontology "resources/mio/kotoba/ontology.mio.edn"
   :seed/sourcing :representative
   :seed/classes [:waste-heat :flexibility :compute-routing :renewable-absorb :peak-shave :intention]}
 

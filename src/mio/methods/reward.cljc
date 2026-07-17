@@ -103,7 +103,7 @@
 
 #?(:clj
    (defn -main [& args]
-     (let [seed (or (first args) "kotoba/seed.edn")
+     (let [seed (or (first args) "resources/mio/kotoba/seed.edn")
            rows (clojure.edn/read-string (slurp seed))
            cs (vec (filter #(= (:type %) :claim) rows))
            ;; load + verify via analyze

@@ -2,7 +2,7 @@
 ;; 澪 mio — flow-improvement claim lexicon validator (the write-surface contract).
 (ns mio.methods.lexicon
   "lexicon.cljc — validates a flow-improvement CLAIM against the
-  com.etzhayyim.mio.flowClaim schema (kotoba/lexicon.flowClaim.edn).
+  com.etzhayyim.mio.flowClaim schema (resources/mio/kotoba/lexicon.flowClaim.edn).
 
   This is the TYPED CONTRACT for the suite's central write surface: each leg
   (撓/燠/樋/委) emits claims; mio verifies them. `validate-claim` returns a (possibly
@@ -27,7 +27,7 @@
 
 #?(:clj
    (defn- reconstitute-entity
-     "kotoba/lexicon.flowClaim.edn is now Datomic/Datascript tx-data on disk
+     "resources/mio/kotoba/lexicon.flowClaim.edn is now Datomic/Datascript tx-data on disk
      (ADR-2606230001 fan-out, 2026-07): a single entity with the ALREADY
      namespaced :lexicon/id + :lexicon/rev left untouched, and the formerly
      bare :doc/:required/:fields/:forbidden promoted under :lexicon.schema/*

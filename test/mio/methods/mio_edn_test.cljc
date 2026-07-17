@@ -5,7 +5,7 @@
   (:require [mio.methods.mio-edn :as me]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/mio/kotoba/seed.edn")
 
 (deftest loads-claims
   (let [cs (me/claims seed-path)]

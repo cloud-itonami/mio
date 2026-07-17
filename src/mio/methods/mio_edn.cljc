@@ -3,7 +3,7 @@
 (ns mio.methods.mio-edn
   "澪 mio — load + classify the flow-improvement CLAIM seed substrate.
 
-  Reads the actor's own EDN substrate (kotoba/seed.edn) into Clojure data with
+  Reads the actor's own EDN substrate (resources/mio/kotoba/seed.edn) into Clojure data with
   real keyword keys, and splits it by :type. Dependency-free (clojure.edn is
   stdlib; file I/O is :clj-only). Sibling of the busshi/kabuto *_edn loaders —
   each actor reads its own substrate. Energy Order Protocol backbone.

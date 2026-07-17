@@ -8,7 +8,7 @@
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/mio/kotoba/seed.edn")
 (defn- analysis [] (a/analyze (me/claims seed-path)))
 (defn- proposals [] (r/proposals (analysis)))
 
