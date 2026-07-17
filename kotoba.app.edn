@@ -1,1 +1,9 @@
-[{:db/id -1, :kotoba.app/name "mio", :kotoba.app/version "0.1.0", :kotoba.app/components "[{:name \"mio\", :src \"methods/mesh.clj\", :scale 1, :triggers [{:type :kse, :topic \"etzhayyim/actor/mio\"}], :requires #{:cap/kqe}}]", :kotoba.app/placement "{:spread :zone, :require {:tier \"edge\"}}"}]
+#:kotoba.app{:name "mio",
+             :version "0.1.0",
+             :components
+             [{:name "mio",
+               :src "src/mio.clj",
+               :scale 1,
+               :triggers [{:type :kse, :topic "etzhayyim/actor/mio"}],
+               :requires #{:cap/kqe}}],
+             :placement {:spread :zone, :require {:tier "edge"}}}

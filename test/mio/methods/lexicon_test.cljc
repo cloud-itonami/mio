@@ -6,7 +6,7 @@
             [mio.methods.mio-edn :as me]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def schema (lex/load-schema "20-actors/mio/kotoba/lexicon.flowClaim.edn"))
+(def schema (lex/load-schema "kotoba/lexicon.flowClaim.edn"))
 
 (def good
   {:type :claim :id "x-1" :flow-class :waste-heat :source-actor "okibi"
@@ -45,7 +45,7 @@
   ;; The lexicon (write-surface contract) accepts the well-formed claims and rejects
   ;; the malformed blank-baseline fixture — the same degeneracy §9 routes to
   ;; :insufficient-evidence, here caught one layer earlier at the interface.
-  (let [claims (me/claims "20-actors/mio/kotoba/seed.edn")
+  (let [claims (me/claims "kotoba/seed.edn")
         blank (first (filter #(= "in-no-baseline-01" (:id %)) claims))
         well-formed (remove #(= "in-no-baseline-01" (:id %)) claims)]
     (is (not (lex/valid? schema blank)) "the blank-baseline fixture is rejected by the lexicon")

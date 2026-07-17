@@ -1,0 +1,8 @@
+{:contracts/version 1
+ :contracts
+ [{:contract/id :kotoba/commit-dag :repository "https://github.com/etzhayyim/com-etzhayyim-kotoba-datom" :revision "3c4b3b92234e59ba285119fd8b2ca4c2ee172ff8"}
+  {:contract/id :social/publication :repository "https://github.com/etzhayyim/com-etzhayyim-social-publication" :revision "e8127d0661284b1c12ce1b216c84b5ed2db619ab"}
+  {:contract/id :suite/tawami :status :pending-repository-extraction}
+  {:contract/id :suite/okibi :status :pending-repository-extraction}
+  {:contract/id :suite/toi :status :pending-repository-extraction}
+  {:contract/id :suite/yudane :status :pending-repository-extraction}]}

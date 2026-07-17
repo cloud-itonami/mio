@@ -1,0 +1,23 @@
+#!/usr/bin/env bb
+(ns mio.cell-test
+  (:require [mio.cell :as cell]
+            [mio.methods.kotoba :as kotoba]
+            [clojure.java.io :as io]
+            [clojure.test :refer [deftest is run-tests]]))
+
+(deftest fire-is-standalone-and-idempotent
+  (let [path (str (io/file (System/getProperty "java.io.tmpdir")
+                           (str "mio-cell-test-" (gensym) ".edn")))]
+    (try
+      (let [first-run (cell/fire path)
+            second-run (cell/fire path)]
+        (is (map? first-run))
+        (is (:appended first-run))
+        (is (string? (:head first-run)))
+        (is (false? (:appended second-run)))
+        (is (= :no-change (:reason second-run)))
+        (is (:ok (kotoba/verify-chain path))))
+      (finally (io/delete-file path true)))))
+
+(let [{:keys [fail error]} (run-tests 'mio.cell-test)]
+  (when (pos? (+ fail error)) (System/exit 1)))

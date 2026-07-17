@@ -14,10 +14,9 @@
 
 #?(:clj
    (defn- actor-dir
-     "20-actors/mio, resolved from this namespace's classpath location so the cell
-     runs from any cwd (the cell-runner's contract)."
+     "Repository root, resolved from src/mio/cell.cljc on the classpath."
      []
-     (-> (io/resource "mio/cell.cljc") io/file .getParentFile)))
+     (-> (io/resource "mio/cell.cljc") io/file .getParentFile .getParentFile .getParentFile)))
 
 #?(:clj
    (def ^:private log-default

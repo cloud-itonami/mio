@@ -8,8 +8,8 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/mio/kotoba/seed.edn")
-(def ^:private tmp "20-actors/mio/data/test-autorun.kotoba.edn")
+(def seed-path "kotoba/seed.edn")
+(def ^:private tmp "data/test-autorun.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 (defn- claims [] (me/claims seed-path))
 

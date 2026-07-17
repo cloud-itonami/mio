@@ -245,7 +245,7 @@
 
 #?(:clj
    (defn -main [& args]
-     (let [seed (or (first args) "20-actors/mio/kotoba/seed.edn")
+     (let [seed (or (first args) "kotoba/seed.edn")
            rows (clojure.edn/read-string (slurp seed))
            cs (vec (filter #(= (:type %) :claim) rows))
            a (analyze cs)

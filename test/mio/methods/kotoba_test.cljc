@@ -6,7 +6,7 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def ^:private tmp "20-actors/mio/data/test-ledger.kotoba.edn")
+(def ^:private tmp "data/test-ledger.kotoba.edn")
 
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 

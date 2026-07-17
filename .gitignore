@@ -1,1 +1,3 @@
-data/
+.cpcache/
+.clj-kondo/
+data/persisted/

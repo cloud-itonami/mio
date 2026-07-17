@@ -34,12 +34,12 @@
   {:n/id "N5" :n/rule "No person/individual data — intention claims are content-free aggregates"}]
 
  :actor/methods
- [{:method/id "mio_edn" :method/file "methods/mio_edn.cljc" :method/role "seed loader + classify (claims)"}
-  {:method/id "analyze"  :method/file "methods/analyze.cljc"  :method/role "verify (§9 gates) → datoms → render-datoms → coverage → render-report (+ bb CLI)"}
-  {:method/id "kotoba"   :method/file "methods/kotoba.cljc"   :method/role "content-addressed append-only VERIFICATION LEDGER (tx-cid/append-tx/read-log/verify-chain)"}
-  {:method/id "autorun"  :method/file "methods/autorun.cljc"  :method/role "deterministic idempotent-by-content heartbeat — verify → append verdicts on change (+ bb CLI)"}
-  {:method/id "reward"   :method/file "methods/reward.cljc"   :method/role "R1: verified claims → advisory moyai reciprocity-credit reward proposals (drafted-unsent; 1 SBT=1 vote disposes; cash≡0)"}
-  {:method/id "lexicon"  :method/file "methods/lexicon.cljc"  :method/role "R1: write-surface contract — validate a flow-improvement claim against com.etzhayyim.mio.flowClaim (kotoba/lexicon.flowClaim.edn)"}]
+ [{:method/id "mio_edn" :method/file "src/mio/methods/mio_edn.cljc" :method/role "seed loader + classify (claims)"}
+  {:method/id "analyze"  :method/file "src/mio/methods/analyze.cljc"  :method/role "verify (§9 gates) → datoms → render-datoms → coverage → render-report (+ bb CLI)"}
+  {:method/id "kotoba"   :method/file "src/mio/methods/kotoba.cljc"   :method/role "content-addressed append-only VERIFICATION LEDGER (tx-cid/append-tx/read-log/verify-chain)"}
+  {:method/id "autorun"  :method/file "src/mio/methods/autorun.cljc"  :method/role "deterministic idempotent-by-content heartbeat — verify → append verdicts on change (+ bb CLI)"}
+  {:method/id "reward"   :method/file "src/mio/methods/reward.cljc"   :method/role "R1: verified claims → advisory moyai reciprocity-credit reward proposals (drafted-unsent; 1 SBT=1 vote disposes; cash≡0)"}
+  {:method/id "lexicon"  :method/file "src/mio/methods/lexicon.cljc"  :method/role "R1: write-surface contract — validate a flow-improvement claim against com.etzhayyim.mio.flowClaim (kotoba/lexicon.flowClaim.edn)"}]
 
  :actor/lex
  [{:lex/id "flowClaim" :lex/file "kotoba/lexicon.flowClaim.edn"
@@ -67,6 +67,10 @@
 
  :actor/tests
  {:runner "babashka"
-  :cmd "./20-actors/mio/run_tests.sh"
-  :suites ["methods/test_mio_edn.cljc" "methods/test_analyze.cljc"
-           "methods/test_kotoba.cljc" "methods/test_autorun.cljc"]}}
+  :cmd "./run_tests.sh"
+  :suites ["test/mio/methods/mio_edn_test.cljc" "test/mio/methods/analyze_test.cljc"
+           "test/mio/methods/kotoba_test.cljc" "test/mio/methods/autorun_test.cljc"
+           "test/mio/methods/reward_test.cljc" "test/mio/methods/lexicon_test.cljc"
+           "test/mio/cell_test.cljc"]}
+ :actor/contracts "repository-contracts.edn"
+ :actor/canonical-format :edn}

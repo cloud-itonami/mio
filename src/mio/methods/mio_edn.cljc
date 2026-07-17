@@ -13,7 +13,7 @@
   `parse-edn` reconstitutes it back into the original flat vector of bare-keyed
   claim maps (stripping :db/id + the :mio.claim namespace) so every downstream
   consumer of `claims`/`load-edn`/`classify` — in this actor's own methods AND
-  in 20-actors/energy_order/validate.cljc — keeps working unchanged against
+  in the energy-order validator — keeps working unchanged against
   bare :type/:id/:flow-class/... keys."
   (:require [clojure.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
