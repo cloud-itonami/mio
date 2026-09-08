@@ -10,7 +10,7 @@
   offline. The schema declares required fields, types, enums, ranges, non-blank, a
   const, and a :forbidden set (consumption-reward / currency / trade / person — the
   PoW→PoUF + map-not-market gates enforced at the interface)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 

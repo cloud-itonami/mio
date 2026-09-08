@@ -16,7 +16,7 @@
         :money / :equity attribute exists — the reward is unrepresentable as currency.
     G7  no-server-key: every proposal is advisory + drafted-unsent + binds-fund=false.
         mio cannot move funds or vote; issuance is 1 SBT=1 vote + TitheRouter."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; moyai reciprocity credit: non-monetary, decaying, non-transferable (ADR-2606062101).
 (def reward-kind :moyai-reciprocity-credit)
