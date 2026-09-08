@@ -5,7 +5,7 @@
   (:require [mio.methods.mio-edn :as me]
             [mio.methods.analyze :as a]
             [mio.methods.reward :as r]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def seed-path "resources/mio/kotoba/seed.edn")

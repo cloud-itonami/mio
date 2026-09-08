@@ -25,7 +25,7 @@
         (no :trade / :signal / price-forecast-point attribute is ever emitted).
     G5  intention claims are content-free — no per-person intent text is read or
         emitted; the report is a RESILIENCE/REWARD map, NEVER a market signal."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── thresholds + the §9 measurement-confidence table ─────────────────────────
 
