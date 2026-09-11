@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — heartbeat (idempotent-by-content) tests.
-;; Run:  bb --classpath 20-actors 20-actors/mio/methods/test_autorun.cljc
+;; Run:  kbb --classpath 20-actors 20-actors/mio/methods/test_autorun.cljc
 (ns mio.methods.test-autorun
   (:require [mio.methods.mio-edn :as me]
             [mio.methods.autorun :as ar]

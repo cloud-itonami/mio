@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — analyze → datoms → coverage (clj-native, pure stdlib).
 (ns mio.methods.analyze
   "澪 mio — the Proof-of-Useful-Flow verification core (Energy Order Protocol).

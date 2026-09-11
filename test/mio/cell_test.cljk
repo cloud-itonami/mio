@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 (ns mio.cell-test
   (:require [mio.cell :as cell]
             [mio.methods.kotoba :as kotoba]
