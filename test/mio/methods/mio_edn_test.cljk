@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — seed loader tests.
-;; Run:  bb --classpath 20-actors 20-actors/mio/methods/test_mio_edn.cljc
+;; Run:  kbb --classpath 20-actors 20-actors/mio/methods/test_mio_edn.cljc
 (ns mio.methods.test-mio-edn
   (:require [mio.methods.mio-edn :as me]
             [clojure.test :refer [deftest is run-tests]]))

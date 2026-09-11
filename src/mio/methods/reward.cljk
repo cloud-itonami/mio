@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — reward-proposal emitter (the verified→reward arc; the economic half of PoUF).
 (ns mio.methods.reward
   "reward.cljc — 澪 mio advisory REWARD-PROPOSAL emitter (Energy Order Protocol).

@@ -51,8 +51,8 @@ gate is verification. A flow-improvement claim reaches `:verified` (and therefor
 
 ```bash
 ./20-actors/mio/run_tests.sh                                   # 24 tests / 174 assertions
-bb --classpath 20-actors 20-actors/mio/methods/analyze.cljc    # render the Proof-of-Useful-Flow ledger
-bb --classpath 20-actors 20-actors/mio/methods/autorun.cljc    # one heartbeat → append verdicts (idempotent-by-content)
+kbb --classpath 20-actors 20-actors/mio/methods/analyze.cljc    # render the Proof-of-Useful-Flow ledger
+kbb --classpath 20-actors 20-actors/mio/methods/autorun.cljc    # one heartbeat → append verdicts (idempotent-by-content)
 ```
 
 ## Layout

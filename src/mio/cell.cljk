@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — cell entry (kotodama cell-runner contract, ADR-2605192415 §7.1).
 (ns mio.cell
   "澪 mio cell entry — kotodama-cell-runner contract (ADR-2605192415 §7.1).

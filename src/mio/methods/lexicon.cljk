@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — flow-improvement claim lexicon validator (the write-surface contract).
 (ns mio.methods.lexicon
   "lexicon.cljc — validates a flow-improvement CLAIM against the

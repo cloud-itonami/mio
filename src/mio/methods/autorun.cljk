@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 澪 mio — autonomous heartbeat: analyze → append verdicts to the ledger.
 (ns mio.methods.autorun
   "autorun.cljc — 澪 mio deterministic, idempotent-by-content heartbeat
