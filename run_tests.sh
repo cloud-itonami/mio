@@ -5,4 +5,4 @@ for suite in test/mio/methods/*_test.cljc; do
   echo "== $suite =="
   bb "$suite"
 done
-bb test/mio/cell_test.cljc
+bb test/mio/cell_test.cljk

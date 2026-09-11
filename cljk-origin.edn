@@ -1,0 +1,22 @@
+{:format :kotoba.cljk-origin/v1
+ :renamed-on "2026-09-11"
+ :decision "adr-2609111500-cljk-rename-all-clojure-source (com-junkawasaki/root 90-docs/adr; owner instruction 2026-09-11)"
+ :rule "value = the extension the file had before the rename. A path ending in .clj.cljk or .cljs.cljk kept it in the name because both platform files existed (or the plain target was taken)."
+ :origins
+ {"src/mio.cljk" ".clj"
+  "src/mio/cell.cljk" ".cljc"
+  "src/mio/cells/social_post/state_machine.cljk" ".cljc"
+  "src/mio/methods/analyze.cljk" ".cljc"
+  "src/mio/methods/autorun.cljk" ".cljc"
+  "src/mio/methods/kotoba.cljk" ".cljc"
+  "src/mio/methods/lexicon.cljk" ".cljc"
+  "src/mio/methods/mio_edn.cljk" ".cljc"
+  "src/mio/methods/reward.cljk" ".cljc"
+  "src/mio/methods/social.cljk" ".cljc"
+  "test/mio/cell_test.cljk" ".cljc"
+  "test/mio/methods/analyze_test.cljk" ".cljc"
+  "test/mio/methods/autorun_test.cljk" ".cljc"
+  "test/mio/methods/kotoba_test.cljk" ".cljc"
+  "test/mio/methods/lexicon_test.cljk" ".cljc"
+  "test/mio/methods/mio_edn_test.cljk" ".cljc"
+  "test/mio/methods/reward_test.cljk" ".cljc"}}

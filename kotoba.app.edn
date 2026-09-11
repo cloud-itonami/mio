@@ -2,7 +2,7 @@
              :version "0.1.0",
              :components
              [{:name "mio",
-               :src "src/mio.clj",
+               :src "src/mio.cljk",
                :scale 1,
                :triggers [{:type :kse, :topic "etzhayyim/actor/mio"}],
                :requires #{:cap/kqe}}],

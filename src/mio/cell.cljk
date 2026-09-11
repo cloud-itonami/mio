@@ -14,7 +14,7 @@
 
 #?(:clj
    (defn- actor-dir
-     "Repository root, resolved from src/mio/cell.cljc on the classpath."
+     "Repository root, resolved from src/mio/cell.cljk on the classpath."
      []
      (-> (io/resource "mio/cell.cljc") io/file .getParentFile .getParentFile .getParentFile)))
 
