@@ -29,11 +29,11 @@
       "enabled": true,
       "enabled_toolsets": null,
       "id": "2e3e9781d551",
-      "model": "qwen3.8-27b-whitehacker",
+      "model": "murakumo/free",
       "name": "zeta-l5-weekly-review",
       "no_agent": false,
       "prompt": "zeta-l5-weekly-review: L5 階層マップ現在地レビュー (weekly)。手順: (1) web_search で NKN PoR / AIOZ PoD / Filecoin PDP+retrieval / Proof of Bandwidth・Latency・Useful Delivery の直近1週間の変化を確認 (捏造ゼロ、unknown は unknown、出典 URL 必須)。(2) L5 階層マップ (L1 storage=Filecoin PoRep/PoSt → L2 availability=PDP → L3 transmission=NKN PoR → L4 delivery=AIOZ PoD → L5 performance/useful delivery=未解決) の各層の現在地を1段落ずつ更新する。(3) 観測記録を ~/.hermes/profiles/zeta/workspace/l5-reviews/ に YYYY-MM-DD-l5-status.md として書く (過去分があるなら前回からの差分を冒頭に)。(4) repo 着地: superproject ~/github/com-junkawasaki で nbb scripts/root-worktree.cljs create zeta-l5-review --profile docs --include 90-docs/business を実行し、worktree 内 90-docs/business/zeta-l5-delivery-observations/ に観測ファイルを置いて commit/push、gh api repos/com-junkawasaki/root/merges でサーバ側マージして worktree remove まで完遂 (superproject 本体 checkout への直接編集はしない)。重要な変化が無い週は着地を省略し 差分なし の1行で終了してよい。観測のみで実装・投資判断はしない。",
-      "provider": "kotoba",
+      "provider": "murakumo",
       "schedule": {
         "kind": "cron",
         "expr": "51 */6 * * *",
