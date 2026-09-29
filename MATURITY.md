@@ -17,7 +17,7 @@ Actor: **澪 mio** · ADR-2606211200 · status **R0** · suite **Energy Order Pr
 - [x] test_autorun.cljc (idempotent-by-content)
 - [x] run_tests.sh (babashka) — **24 tests / 174 assertions green**
 - [x] README.md
-- [x] CLAUDE.md (actor-local invariants)
+- [x] AGENTS.md (actor-local invariants)
 - [x] G1 backbone proven: useful-flow-score is 0 unless verified; no `:consumed-reward`
 
 ## Seed verification result (current)
